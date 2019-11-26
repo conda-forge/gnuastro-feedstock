@@ -8,10 +8,6 @@ package:
 source:
   url: http://ftp.gnu.org/gnu/{{name}}/{{name}}-{{version}}.tar.gz
   sha256: f51a5fe6c2ac7218442aa87be883dbd98d130b48d5e2dff3abb2730113c76c2f
-  patches:
-    - remove-hardcoded-gcc.patch
-    - osx-flags.patch
-    - osx-at_fdcwd.patch
 
 build:
   number: 0
