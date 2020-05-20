@@ -1,17 +1,17 @@
 {% set name = "gnuastro" %}
-{% set version = "0.11" %}
+{% set version = "0.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: http://ftp.gnu.org/gnu/{{name}}/{{name}}-{{version}}.tar.gz
-  sha256: f51a5fe6c2ac7218442aa87be883dbd98d130b48d5e2dff3abb2730113c76c2f
+  url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 272efce26b6c80bac86248eb8ea2e063801b1e501decf65f956bac5b91482b9b
 
 build:
-  number: 1
-  skip:  True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -61,7 +61,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'A GNU package consisting of various programs and library functions for the manipulation and analysis of astronomical data.'
+  summary: A GNU package consisting of various programs and library functions for the manipulation and analysis of astronomical data.
 
 extra:
   recipe-maintainers:
