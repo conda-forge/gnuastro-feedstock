@@ -5,11 +5,9 @@ Home: https://www.gnu.org/software/gnuastro
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gnuastro-feedstock/blob/master/LICENSE.txt)
 
 Summary: A GNU package consisting of various programs and library functions for the manipulation and analysis of astronomical data.
-
-
 
 Current build status
 ====================
