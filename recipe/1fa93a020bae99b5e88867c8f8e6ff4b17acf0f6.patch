@@ -1,0 +1,67 @@
+From 1fa93a020bae99b5e88867c8f8e6ff4b17acf0f6 Mon Sep 17 00:00:00 2001
+From: Mohammad Akhlaghi <mohammad@akhlaghi.org>
+Date: Mon, 11 Oct 2021 01:08:04 +0200
+Subject: [PATCH] make check: using printf instead of SED in 1D convolution
+ check
+
+Until now, to feed the 1D kernel into Convolve's 1D convolution feature on
+a test spectrum, we were using 'echo "1 3 10 3 1" | sed 's/ /\n/g''. But
+after the build of Gnuastro on macOS of CondaForge (after the new release
+0.16), I noticed that it crashed with this error:
+
+    astconvolve: '1n3n10n3n1' couldn't be read as a number (element 1
+    of first uncommented line)
+    FAIL convolve/spectrum-1d.sh (exit status: 1)
+
+With this commit, to fix the problem, instead of the pipe above, we are
+simply using 'printf '1\n3\n10\n3\n1\n'' to avoid portability problems with
+SED on different OSs.
+
+This fixes bug #61329.
+---
+ NEWS                          | 15 +++++++++++++++
+ tests/convolve/spectrum-1d.sh |  3 +--
+ 2 files changed, 16 insertions(+), 2 deletions(-)
+
+diff --git a/NEWS b/NEWS
+index 4c6e3179..c73b6fd0 100644
+--- a/NEWS
++++ b/NEWS
+@@ -3,6 +3,21 @@ GNU Astronomy Utilities NEWS                          -*- outline -*-
+ Copyright (C) 2015-2021 Free Software Foundation, Inc.
+ See the end of the file for license conditions.
+ 
++* Noteworthy changes in release X.XX (library XX.0.0) (YYYY-MM-DD) [stable]
++
++** New features
++
++** Removed features
++
++** Changed features
++
++** Bugs fixed
++  bug #61329: make check crash in macOS in convolve/spectrum-1d.sh
++
++
++
++
++
+ * Noteworthy changes in release 0.16 (library 14.0.0) (2021-10-10) [stable]
+ 
+ ** New features
+diff --git a/tests/convolve/spectrum-1d.sh b/tests/convolve/spectrum-1d.sh
+index 4881836b..32b4cb44 100755
+--- a/tests/convolve/spectrum-1d.sh
++++ b/tests/convolve/spectrum-1d.sh
+@@ -54,7 +54,6 @@ if [ ! -f $spec     ]; then echo "$spec does not exist.";  exit 77; fi
+ # 'check_with_program' can be something like Valgrind or an empty
+ # string. Such programs will execute the command if present and help in
+ # debugging when the developer doesn't have access to the user's system.
+-echo "1 3 10 3 1" \
+-    | sed 's/ /\n/g' \
++printf '1\n3\n10\n3\n1\n' \
+     | $check_with_program $execname $spec --domain=spatial   \
+                           --output=convolve_spectrum.txt
+-- 
+GitLab
+
