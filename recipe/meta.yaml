@@ -12,7 +12,7 @@ source:
     - 1fa93a020bae99b5e88867c8f8e6ff4b17acf0f6.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
