@@ -8,8 +8,6 @@ package:
 source:
   url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c41bed33cc240cea9783f43674d7cf474474660466e1088f259a0b0ca8af68f5
-  patches:
-    - 1fa93a020bae99b5e88867c8f8e6ff4b17acf0f6.patch
 
 build:
   number: 0
