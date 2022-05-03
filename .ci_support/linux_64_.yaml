@@ -31,6 +31,8 @@ pin_run_as_build:
     max_pin: x
 target_platform:
 - linux-64
+wcslib:
+- '7.7'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
