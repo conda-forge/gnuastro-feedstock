@@ -19,7 +19,7 @@ gsl:
 jpeg:
 - '9'
 libgit2:
-- '1.4'
+- '1.5'
 libtiff:
 - '4'
 macos_machine:
