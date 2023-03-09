@@ -10,7 +10,7 @@ source:
   sha256: e1b3cd5b4b126ff277e2f48e8adf0103d67fc0ad07cf9a3d3aa7e05529430e35
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - gsl
     - cfitsio
     - wcslib
-    - jpeg
+    - libjpeg-turbo
     - libtiff
     - libgit2
     - ghostscript
