@@ -16,10 +16,10 @@ cxx_compiler_version:
 - '14'
 gsl:
 - '2.7'
-jpeg:
-- '9'
 libgit2:
 - '1.6'
+libjpeg_turbo:
+- 2.1.5
 libtiff:
 - '4.5'
 macos_machine:
