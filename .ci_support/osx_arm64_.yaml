@@ -27,7 +27,7 @@ macos_machine:
 target_platform:
 - osx-arm64
 wcslib:
-- '7.7'
+- '7'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
