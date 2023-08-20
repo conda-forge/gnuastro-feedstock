@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 924b8bb6ac1cd15163ddadc3a9bfdb8b88cac7b5099d5f821ecedbc3f0b069cd
+  url: https://alpha.gnu.org/gnu/gnuastro/gnuastro-0.20.60-d994.tar.lz
+  sha256: f3c533bb6a648dd3c0619fdcf0b066b1f5081978946c0bd7f6e912f15eb4c1fe
 
 build:
   number: 3
