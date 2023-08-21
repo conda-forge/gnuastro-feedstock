@@ -19,7 +19,7 @@ docker_image:
 gsl:
 - '2.7'
 libgit2:
-- '1.6'
+- '1.7'
 libjpeg_turbo:
 - 2.1.5
 libtiff:
