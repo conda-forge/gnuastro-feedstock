@@ -6,7 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://alpha.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz.lz
+#  url: https://alpha.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz.lz
+  url: https://alpha.gnu.org/gnu/gnuastro/gnuastro-0.20.60-d994.tar.lz
   sha256: f3c533bb6a648dd3c0619fdcf0b066b1f5081978946c0bd7f6e912f15eb4c1fe
 
 build:
