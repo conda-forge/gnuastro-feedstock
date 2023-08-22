@@ -1,5 +1,5 @@
-About gnuastro-feedstock
-========================
+About gnuastro_dev-feedstock
+============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gnuastro-feedstock/blob/main/LICENSE.txt)
 
@@ -60,53 +60,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gnuastro-green.svg)](https://anaconda.org/conda-forge/gnuastro) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gnuastro.svg)](https://anaconda.org/conda-forge/gnuastro) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gnuastro.svg)](https://anaconda.org/conda-forge/gnuastro) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gnuastro.svg)](https://anaconda.org/conda-forge/gnuastro) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gnuastro_dev-green.svg)](https://anaconda.org/conda-forge/gnuastro_dev) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gnuastro_dev.svg)](https://anaconda.org/conda-forge/gnuastro_dev) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gnuastro_dev.svg)](https://anaconda.org/conda-forge/gnuastro_dev) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gnuastro_dev.svg)](https://anaconda.org/conda-forge/gnuastro_dev) |
 
-Installing gnuastro
-===================
+Installing gnuastro_dev
+=======================
 
-Installing `gnuastro` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `gnuastro_dev` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gnuastro` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `gnuastro_dev` can be installed with `conda`:
 
 ```
-conda install gnuastro
-```
-
-or with `mamba`:
-
-```
-mamba install gnuastro
-```
-
-It is possible to list all of the versions of `gnuastro` available on your platform with `conda`:
-
-```
-conda search gnuastro --channel conda-forge
+conda install gnuastro_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search gnuastro --channel conda-forge
+mamba install gnuastro_dev
+```
+
+It is possible to list all of the versions of `gnuastro_dev` available on your platform with `conda`:
+
+```
+conda search gnuastro_dev --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search gnuastro_dev --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gnuastro --channel conda-forge
+mamba repoquery search gnuastro_dev --channel conda-forge
 
-# List packages depending on `gnuastro`:
-mamba repoquery whoneeds gnuastro --channel conda-forge
+# List packages depending on `gnuastro_dev`:
+mamba repoquery whoneeds gnuastro_dev --channel conda-forge
 
-# List dependencies of `gnuastro`:
-mamba repoquery depends gnuastro --channel conda-forge
+# List dependencies of `gnuastro_dev`:
+mamba repoquery depends gnuastro_dev --channel conda-forge
 ```
 
 
@@ -151,17 +151,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating gnuastro-feedstock
-===========================
+Updating gnuastro_dev-feedstock
+===============================
 
-If you would like to improve the gnuastro recipe or build a new
+If you would like to improve the gnuastro_dev recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/gnuastro-feedstock are
+Note that all branches in the conda-forge/gnuastro_dev-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
