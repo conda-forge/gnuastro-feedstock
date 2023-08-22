@@ -1,5 +1,5 @@
 {% set name = "gnuastro" %}
-{% set version = "0.20.60-d994" %}
+{% set version = "0.20.60" %}
 
 package:
   name: {{ name|lower }}_dev
