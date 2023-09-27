@@ -21,7 +21,7 @@ gsl:
 libgit2:
 - '1.7'
 libjpeg_turbo:
-- 2.1.5
+- '3'
 libtiff:
 - '4.6'
 target_platform:
