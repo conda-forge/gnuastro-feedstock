@@ -1,12 +1,12 @@
 {% set name = "gnuastro" %}
-{% set version = "0.20.84-28d7" %}
+{% set version = "0.20.84" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://akhlaghi.org/src/{{ name }}-{{ version }}.tar.xz
+  url: https://akhlaghi.org/src/{{ name }}-{{ version }}-28d7.tar.xz
   sha256: 7dea2e222581652e026f908b272d93814be5bf3c2ab3c99c598dfaaeb7849e57
 
 build:
