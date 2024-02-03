@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://akhlaghi.org/src/gnuastro-0.21.90-3c5d.tar.xz
-  sha256: 1b2f9721f8a272d5d3b9245b5bf1ea73027bef5ea70c2d6747800e80e5e513ee
+  url: http://akhlaghi.org/src/gnuastro-0.21.92-45cd.tar.xz
+  sha256: 108f0cb5649b7d006a116f2a30138e251f44a5d09863d8e1a0377a90f6a438a0
 
 build:
   number: 0
