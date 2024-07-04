@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fd7f16a06bde55aed96282090cd922135beea902369e5af814389eab9cc7308
+  url:    http://akhlaghi.org/src/gnuastro-0.22.87-d231.tar.xz
+  sha256: 64b70500a4189494c2b21a19c76319bfd88d3cb1732d7d18f46394a1d71d73e5
 
 build:
   number: 2
