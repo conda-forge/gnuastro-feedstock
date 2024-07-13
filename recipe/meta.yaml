@@ -1,5 +1,5 @@
 {% set name = "gnuastro" %}
-{% set version = "0.22" %}
+{% set version = "0.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fd7f16a06bde55aed96282090cd922135beea902369e5af814389eab9cc7308
+  sha256: f97e775ffb5981c63f8adfbe958fcebf9147c13f0e7e96407dddfdf33b3f7702
 
 build:
   number: 2
