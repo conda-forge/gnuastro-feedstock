@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://ftp.gnu.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fd7f16a06bde55aed96282090cd922135beea902369e5af814389eab9cc7308
+  url: http://akhlaghi.org/src/gnuastro-0.22.90-ccb84-dirty.tar.xz
+  sha256: 729176b976cee1dbf729ae506b7287fb0d7664797bd8a986f329353acadea040
 
 build:
   number: 2
