@@ -23,7 +23,7 @@ cxx_compiler_version:
 gsl:
 - '2.7'
 libgit2:
-- '1.8'
+- '1.9'
 libjpeg_turbo:
 - '3'
 libtiff:
